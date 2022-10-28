@@ -2,7 +2,7 @@ package Question_2;
 
 public class ListNode
 {
-    int val;
+    public int val;
     public ListNode next;
     public ListNode() {}
     public ListNode(int val) { this.val = val; }
@@ -18,7 +18,7 @@ public class ListNode
         
         while(l != null)
         {
-            System.out.print(l.val);
+            System.out.print(" "+l.val);
             l = l.next;
         }
         System.out.println();

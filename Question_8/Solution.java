@@ -4,10 +4,16 @@ import java.util.ArrayList;
 
 public class Solution 
 {
+    /*
     public static ArrayList<Integer> ints = new ArrayList<>();
-    public static boolean isNegative = false;
     
-    public static boolean Check(char a)
+    public static boolean isNegative = false;
+    public static boolean hasInt = false;
+    public static long result = 0;
+    
+    public static char[] valid_chars = {'1','2','3','4','5','6','7','8','9','0','-','+','.'};
+    
+    public static void Check(char a)
     {
         switch(a)
         {
@@ -31,20 +37,35 @@ public class Solution
             
             case '0': ints.add(0); break;
             
-            case '-': if(isNegative == true) {isNegative = false;}else{isNegative = true;}; break;
+            case '-': if(isNegative == true) {result = 0;break;}else{isNegative = true;}; break;
             
             default: break;    
         }
-        return false;
     }
     
     public static int myAtoi(String s) 
     {
-        long result = 0;
+        if(s == null) {return 0;}
         
-        for(int i=0;i<s.length();i++)
+        s = s.replaceAll(" ", "");
+        
+        for(int i=0;i<valid_chars.length;i++)
         {
-            char temp = s.charAt(i);
+            if(s.charAt(0) == valid_chars[i])
+        {
+            hasInt = true;
+        }
+        }
+        if(hasInt == false)
+        {
+            return 0;
+        }
+        
+        char temp = s.charAt(0);
+        
+        for(int i=0;i<s.length() && temp != valid_chars[valid_chars.length-1];i++)
+        {
+            temp = s.charAt(i);
             Check(temp);
             //System.out.println(temp);
         }
@@ -71,8 +92,9 @@ public class Solution
         {
             result = positive_boundary;
         }
-        
         //System.out.println(result);
+        System.out.println(ints);
         return (int)result;
     }
+*/
 }

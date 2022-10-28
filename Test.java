@@ -1,23 +1,87 @@
 
 import Question_1.Solution;
+import static Question_11.Solution.maxArea;
+import static Question_19.Solution.removeNthFromEnd;
 import Question_2.ListNode;
 import static Question_2.ListNode.TraverseNode;
 import static Question_2.Solution.addTwoNumbers;
+import static Question_21.Solution.mergeTwoLists;
 import static Question_3.Solution.lengthOfLongestSubstring;
 import static Question_4.Solution2.findMedianSortedArrays;
 import static Question_7.Solution.reverse;
-import static Question_8.Solution.myAtoi;
+//import static Question_8.Solution.myAtoi;
+import static Question_8.Solution2.myAtoi;
 
 public class Test 
 {
     public static void main(String[] args)
     {
-        Q8();
+        Q14();
+    }
+    
+    public static void Q14()
+    {
+        
+    }
+    
+    public static void Q21()
+    {
+        ListNode ln = new ListNode(1);
+        ListNode temp1 = ln;
+        temp1.next = new ListNode(2);
+        temp1 = temp1.next;
+        temp1.next = new ListNode(4);
+        temp1 = temp1.next;
+        
+        ListNode ln4 = new ListNode(1);
+        ListNode temp = ln4;
+        temp.next = new ListNode(3);
+        temp = temp.next;
+        temp.next = new ListNode(4);
+        temp = temp.next;
+        
+        ListNode answer = mergeTwoLists(ln,ln4);
+        
+        TraverseNode(ln);
+        TraverseNode(ln4);
+        TraverseNode(answer);
+    }
+    
+    public static void Q11()
+    {
+        int[] array = new int[]{1,8,6,2,5,4,8,3,7};
+        
+        int Result = maxArea(array);
+        
+        System.out.println("Result: " +Result);
+    }
+    
+    public static void Q19()
+    {
+        ListNode ln = new ListNode(1);
+        ListNode temp1 = ln;
+        temp1.next = new ListNode(2);
+        temp1 = temp1.next;
+        /*
+        temp1.next = new ListNode(3);
+        temp1 = temp1.next;
+        temp1.next = new ListNode(4);
+        temp1 = temp1.next;
+        temp1.next = new ListNode(5);
+        temp1 = temp1.next;
+        */
+        
+        
+        TraverseNode(ln);
+        
+        ListNode Answer = removeNthFromEnd(ln,2);
+        
+        TraverseNode(Answer);
     }
     
     public static void Q8()
     {
-        String s = "words and 987";
+        String s = "    3.14159";
         int result = myAtoi(s);
         System.out.println(result);
     }
