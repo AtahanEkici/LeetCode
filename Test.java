@@ -1,6 +1,7 @@
 
 import Question_1.Solution;
 import static Question_11.Solution.maxArea;
+import static Question_18.Solution.fourSum;
 import static Question_19.Solution.removeNthFromEnd;
 import Question_2.ListNode;
 import static Question_2.ListNode.TraverseNode;
@@ -16,7 +17,18 @@ public class Test
 {
     public static void main(String[] args)
     {
-        Q14();
+        Q46();
+    }
+    
+    public static void Q18()
+    {
+        int[] array = new int[]{1,0,-1,0,-2,2};
+        fourSum(array,0);
+    }
+    
+    public static void Q46()
+    {
+        
     }
     
     public static void Q14()

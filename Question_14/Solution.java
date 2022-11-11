@@ -15,6 +15,7 @@ public class Solution
                 
             }
         }
+        return null;
     }
     
     public static void AddToDictionary()
