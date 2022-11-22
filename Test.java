@@ -1,6 +1,7 @@
 
 import Question_1.Solution;
 import static Question_11.Solution.maxArea;
+import static Question_17.Solution.letterCombinations;
 import static Question_18.Solution.fourSum;
 import static Question_19.Solution.removeNthFromEnd;
 import Question_2.ListNode;
@@ -12,12 +13,34 @@ import static Question_4.Solution2.findMedianSortedArrays;
 import static Question_7.Solution.reverse;
 //import static Question_8.Solution.myAtoi;
 import static Question_8.Solution2.myAtoi;
+import static Question_66.Solution.plusOne;
+import static Question_66.Solution.printArray;
+import static Question_75.Solution.sortColors;
 
 public class Test 
 {
     public static void main(String[] args)
     {
-        Q46();
+        Q75();
+    }
+    
+    private static void Q75()
+    {
+        int[] nums = {2,0,2,1,1,0};
+        sortColors(nums);
+        printArray(nums);
+    }
+    
+    private static void Q66()
+    {
+        int[] test = {1,7,8};
+        int[] result = plusOne(test);
+        printArray(result);
+    }
+    
+    private static void Q17()
+    {
+        System.out.println(letterCombinations("23"));
     }
     
     public static void Q18()
