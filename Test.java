@@ -7,8 +7,11 @@ import static Question_19.Solution.removeNthFromEnd;
 import Question_2.ListNode;
 import static Question_2.ListNode.TraverseNode;
 import static Question_2.Solution.addTwoNumbers;
+import static Question_20.Solution.isValid;
 import static Question_21.Solution.mergeTwoLists;
 import static Question_3.Solution.lengthOfLongestSubstring;
+import static Question_34.Solution.searchRange;
+import static Question_35.Solution.searchInsert;
 import static Question_4.Solution2.findMedianSortedArrays;
 import static Question_7.Solution.reverse;
 //import static Question_8.Solution.myAtoi;
@@ -21,7 +24,30 @@ public class Test
 {
     public static void main(String[] args)
     {
-        Q75();
+        Q35();
+    }
+    
+    private static void Q35()
+    {
+        int nums[] = {1,3,5,6};
+        int target = 2;
+        int result = searchInsert(nums,target);
+        System.out.println(result);
+    }
+    
+    private static void Q34()
+    {
+        int[] nums = {5,7,7,8,8,10};
+        int[] result = searchRange(nums,8);
+        printArray(nums);
+        printArray(result);
+    }
+    
+    private static void Q20()
+    {
+        String test = "()[]{}";
+        boolean result = isValid(test);
+        System.out.println(result);
     }
     
     private static void Q75()

@@ -1,4 +1,4 @@
-package Question_20;
+ package Question_20;
 
 public class Solution 
 {
@@ -11,62 +11,35 @@ public class Solution
     private static final char left_square_bracket = '[';
     private static final char right_square_bracket = ']';
     
-    public boolean isValid(String s)
+    public static boolean isValid(String s)
     {
-        int lp = 0;
-        int rp = 0;
+        int left_index = 0;
+        int right_index = s.length() - 1;
         
-        int lcb = 0;
-        int rcb = 0;
+        char left_char;
+        char right_char;
         
-        int lsb = 0;
-        int rsb = 0;
-        
-        for(int i=0;i<s.length();i++)
+        for(int i=0;i<s.length()/2;i++)
         {
-            switch(s.charAt(i))
+            left_char = s.charAt(left_index);
+            right_char = s.charAt(right_index);
+            
+            if(!(left_char == left_pharanthes && right_char == right_pharantes))
             {
-                case left_pharanthes:
-                    lp++;
-                    break;
-                    
-                case right_pharantes:
-                    rp++;
-                    break;
-                    
-                case left_curly_bracket:
-                    lcb++;
-                    break;
-                    
-                case right_curly_bracket:
-                    rcb++;
-                    break;
-                    
-                case left_square_bracket:
-                    lsb++;
-                    break;
-                        
-                case right_square_bracket:
-                    rsb++;
-                    break;
+                return false;
             }
+            else if(!(left_char == left_curly_bracket && right_char == right_curly_bracket))
+            {
+                return false;
+            }
+            else if(!(left_char == left_square_bracket && right_char == right_square_bracket))
+            {
+                return false;
+            }
+            
+            left_index++;
+            right_index--;
         }
-        
-        if(lp != rp)
-        {
-            return false;
-        }
-        else if(lcb != rcb)
-        {
-            return false;
-        }
-        else if(lsb != rsb)
-        {
-            return false;
-        }
-        else 
-        {
-            return true;
-        }
+        return true;
     }
 }
