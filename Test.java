@@ -6,7 +6,7 @@ import static Question_18.Solution.fourSum;
 import static Question_19.Solution.removeNthFromEnd;
 import Question_2.ListNode;
 import static Question_2.ListNode.TraverseNode;
-import static Question_2.Solution.addTwoNumbers;
+import Question_2.Solution2;
 import static Question_20.Solution.isValid;
 import static Question_21.Solution.mergeTwoLists;
 import static Question_3.Solution.lengthOfLongestSubstring;
@@ -24,7 +24,32 @@ public class Test
 {
     public static void main(String[] args)
     {
-        Q35();
+       Q206();
+    }
+    public static void Q206()
+    {
+        
+    }
+    public static void Q2()
+    {
+        ListNode ln = new ListNode(1);
+        ListNode temp1 = ln;
+        temp1.next = new ListNode(2);
+        temp1 = temp1.next;
+        temp1.next = new ListNode(4);
+        temp1 = temp1.next;
+        
+        ListNode ln4 = new ListNode(1);
+        ListNode temp = ln4;
+        temp.next = new ListNode(3);
+        temp = temp.next;
+        temp.next = new ListNode(4);
+        temp = temp.next;
+        
+        TraverseNode(ln);
+        TraverseNode(ln4);
+        
+        Solution2.addTwoNumbers(ln,ln4);
     }
     
     private static void Q35()
@@ -166,43 +191,7 @@ public class Test
         System.out.println("Returned value: "+reversed+"");
     }
     
-    public static void Q2()
-    {
-        /*
-        ListNode ln = new ListNode(0);
-        ListNode ln2 = new ListNode(0);
-        addTwoNumbers(ln,ln2);
-        */
-        ListNode ln = new ListNode(5);
-        ListNode temp1 = ln;
-        temp1.next = new ListNode(6);
-        temp1 = temp1.next;
-        temp1.next = new ListNode(4);
-        temp1 = temp1.next;
-        
-        ListNode ln4 = new ListNode(1);
-        ListNode temp = ln4;
-        temp.next = new ListNode(0);
-        temp = temp.next;
-        temp.next = new ListNode(0);
-        temp = temp.next;
-        
-        TraverseNode(ln);
-        TraverseNode(ln4);
-        
-        addTwoNumbers(ln,ln4);
-        
-        /*
-        int deneme = 702;
-        int sonuç = 0;
-        
-        for(int i=0;deneme>0;i++)
-        {
-            System.out.println(""+deneme%10+"");
-            deneme = deneme / 10;
-        }
-*/
-    }
+    
     public static void Q1()
     {
        int[] nums = {2,7,11,15};
