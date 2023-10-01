@@ -1,4 +1,3 @@
-
 import static Question_11.Solution.maxArea;
 import static Question_17.Solution.letterCombinations;
 import static Question_18.Solution.fourSum;
@@ -11,8 +10,9 @@ import static Question_3.Solution.lengthOfLongestSubstring;
 import static Question_34.Solution.searchRange;
 import static Question_35.Solution.searchInsert;
 import static Question_4.Solution2.findMedianSortedArrays;
+//import static Question_6.Solution.convert;
+import static Question_6.Solution2.convert;
 import static Question_7.Solution.reverse;
-//import static Question_8.Solution.myAtoi;
 import static Question_8.Solution2.myAtoi;
 import static Question_66.Solution.plusOne;
 import static Question_66.Solution.printArray;
@@ -22,7 +22,34 @@ public class Test
 {
     public static void main(String[] args)
     {
-       Q680();
+       Q6();
+    }
+    public static void Q6()
+    {
+        String deneme = "P   A   H   N\n" +
+                        "A P L S I I G\n" +
+                        "Y   I   R";
+        int rowCount = 3;
+        
+        String result = convert(deneme,rowCount);
+        
+        System.out.println("Result: "+result);
+    }
+    public static void Q28()
+    {
+        String haystack = "abc";
+        String needle = "c";
+        System.out.println("\n"+"Result: "+Question_28.Solution.strStr(haystack, needle));
+    }
+    public static void Q67()
+    {
+        String a = "11"; String b = "1";
+        Question_67.Solution.addBinary(a, b);
+    }
+    public static void Q46()
+    {
+         int[] nums = {1,2,3};
+       Question_46.Solution.permute(nums);
     }
     public static void Q680()
     { 
@@ -102,11 +129,6 @@ public class Test
     {
         int[] array = new int[]{1,0,-1,0,-2,2};
         fourSum(array,0);
-    }
-    
-    public static void Q46()
-    {
-        
     }
     
     public static void Q14()
