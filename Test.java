@@ -22,7 +22,11 @@ public class Test
 {
     public static void main(String[] args)
     {
-       Q6();
+       Q9();
+    }
+    public static void Q9()
+    {
+        Question_9.Solution.isPalindrome(-121);
     }
     public static void Q6()
     {
