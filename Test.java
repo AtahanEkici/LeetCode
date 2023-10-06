@@ -22,7 +22,12 @@ public class Test
 {
     public static void main(String[] args)
     {
-       Q9();
+       Q136();
+    }
+    public static void Q136()
+    {
+        int nums[] = {4,1,2,1,2,13};
+        System.out.println("Output: "+Question_136.Solution.singleNumber(nums));
     }
     public static void Q9()
     {
