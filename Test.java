@@ -21,7 +21,15 @@ public class Test
 {
     public static void main(String[] args)
     {
-       Q136();
+      Q2710();
+    }
+    public static void Q2710()
+    {
+        System.out.println(Question_2710.Solution.removeTrailingZeros("Deneme00"));
+    }
+    public static void Q58()
+    {
+        Question_58.Solution.lengthOfLastWord("Hello World And Gents");
     }
     public static void Q118()
     {
@@ -94,7 +102,6 @@ public class Test
         TraverseNode(ln);
         TraverseNode(ln4);
     }
-    
     private static void Q35()
     {
         int nums[] = {1,3,5,6};
@@ -102,7 +109,6 @@ public class Test
         int result = searchInsert(nums,target);
         System.out.println(result);
     }
-    
     private static void Q34()
     {
         int[] nums = {5,7,7,8,8,10};
@@ -110,44 +116,33 @@ public class Test
         printArray(nums);
         printArray(result);
     }
-    
     private static void Q20()
     {
         String test = "()[]{}";
         boolean result = isValid(test);
         System.out.println(result);
     }
-    
     private static void Q75()
     {
         int[] nums = {2,0,2,1,1,0};
         sortColors(nums);
         printArray(nums);
     }
-    
     private static void Q66()
     {
         int[] test = {1,7,8};
         int[] result = plusOne(test);
         printArray(result);
     }
-    
     private static void Q17()
     {
         System.out.println(letterCombinations("23"));
     }
-    
     public static void Q18()
     {
         int[] array = new int[]{1,0,-1,0,-2,2};
         fourSum(array,0);
     }
-    
-    public static void Q14()
-    {
-        
-    }
-    
     public static void Q21()
     {
         ListNode ln = new ListNode(1);
@@ -170,7 +165,6 @@ public class Test
         TraverseNode(ln4);
         TraverseNode(answer);
     }
-    
     public static void Q11()
     {
         int[] array = new int[]{1,8,6,2,5,4,8,3,7};
@@ -179,7 +173,6 @@ public class Test
         
         System.out.println("Result: " +Result);
     }
-    
     public static void Q19()
     {
         ListNode ln = new ListNode(1);
@@ -194,22 +187,18 @@ public class Test
         temp1.next = new ListNode(5);
         temp1 = temp1.next;
         */
-        
-        
         TraverseNode(ln);
         
         ListNode Answer = removeNthFromEnd(ln,2);
         
         TraverseNode(Answer);
     }
-    
     public static void Q8()
     {
         String s = "    3.14159";
         int result = myAtoi(s);
         System.out.println(result);
     }
-    
     public static void Q4()
     {
         int[] nums1 = {1,3};
@@ -217,19 +206,15 @@ public class Test
         
         findMedianSortedArrays(nums1,nums2);
     }
-    
     public static void Q3()
     {
         lengthOfLongestSubstring("bbbbb");
     }
-    
     public static void Q7()
     {
         int reversed = reverse(1534236469);
         System.out.println("Returned value: "+reversed+"");
     }
-    
-    
     public static void Q1()
     {
        int[] nums = {2,7,11,15};
@@ -239,7 +224,5 @@ public class Test
        sol.twoSum(nums, 9);
        sol.twoSum(nums2, 6);
        sol.twoSum(nums3, 6); 
-    }
-    
+    }   
 }
-
