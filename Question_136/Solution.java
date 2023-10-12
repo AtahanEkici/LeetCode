@@ -1,32 +1,38 @@
 package Question_136;
-import java.util.ArrayList;
 
+// SOLVED //
 public class Solution 
 {
-   public static int singleNumber(int[] nums) 
+    public static int singleNumber(int[] nums) 
     {
-        if(nums.length == 1)
-        {
-            return nums[0];
-        }
-        
-        ArrayList numbers = new ArrayList<Integer>();
-        //ArrayList discards = new ArrayList<Integer>();
+        int counter = 0;
         
         for(int i=0;i<nums.length;i++)
         {
-            
+            for(int j=0;j<nums.length;j++)
+            {
+                if(nums[j] == nums[i])
+                {
+                    if(j != i)
+                    {
+                        counter = 0;
+                        break;
+                    }
+                }
+                else
+                {
+                    counter++;
+                }
+            }
+            if(counter == nums.length-1)
+            {
+                counter = 0;
+                return nums[i];
+            }
         }
+        return 0;
     }
-   public static boolean CheckListForSameValue(ArrayList list, int value)
-   {
-       for(int i=0;i<list.size();i++)
-       {
-           if(list.get(i).equals(value))
-           {
-               return true;
-           }
-       }
-       return false;
-   }
 }
+  
+        
+

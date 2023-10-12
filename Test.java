@@ -10,7 +10,6 @@ import static Question_3.Solution.lengthOfLongestSubstring;
 import static Question_34.Solution.searchRange;
 import static Question_35.Solution.searchInsert;
 import static Question_4.Solution2.findMedianSortedArrays;
-//import static Question_6.Solution.convert;
 import static Question_6.Solution2.convert;
 import static Question_7.Solution.reverse;
 import static Question_8.Solution2.myAtoi;
@@ -23,6 +22,10 @@ public class Test
     public static void main(String[] args)
     {
        Q136();
+    }
+    public static void Q118()
+    {
+        System.out.println(Question_118.Solution.calc(5));
     }
     public static void Q136()
     {
