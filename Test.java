@@ -1,5 +1,4 @@
 import static Question_11.Solution.maxArea;
-import static Question_17.Solution.letterCombinations;
 import static Question_18.Solution.fourSum;
 import static Question_19.Solution.removeNthFromEnd;
 import Question_2.ListNode;
@@ -21,7 +20,39 @@ public class Test
 {
     public static void main(String[] args)
     {
-      Q2710();
+      Q2364();
+    }
+    public static void Q2364()
+    {
+        int[] nums = {4,1,3,3};
+        System.out.println(Question_2364.Solution.countBadPairs(nums));
+    }
+    public static void Q2176()
+    {
+        int[] nums = {3,1,2,2,2,1,3};
+        System.out.println(Question_2176.Solution.countPairs(nums, 2));
+    }
+    public static void Q2006()
+    {
+        int[] nums = {1,2,2,1};
+        System.out.println(Question_2006.Solution.countKDifference(nums, 1));
+    }
+    public static void Q367()
+    {
+        System.out.println(Question_367.Solution.isPerfectSquare(100000001));
+    }
+    public static void Q69()
+    {
+        System.out.println(Question_69.Solution.mySqrt(8));
+    }
+    public static void Q263()
+    {
+        System.out.println(Question_263.Solution.isUgly(-1000));
+    }
+    public static void Q268()
+    {
+        int[] nums = {0,3,1};
+        System.out.println(Question_268.Solution.missingNumber(nums));
     }
     public static void Q2710()
     {
@@ -133,10 +164,6 @@ public class Test
         int[] test = {1,7,8};
         int[] result = plusOne(test);
         printArray(result);
-    }
-    private static void Q17()
-    {
-        System.out.println(letterCombinations("23"));
     }
     public static void Q18()
     {
