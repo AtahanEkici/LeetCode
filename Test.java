@@ -20,7 +20,12 @@ public class Test
 {
     public static void main(String[] args)
     {
-      Q2364();
+      Q2367();
+    }
+    public static void Q2367()
+    {
+        int[] nums = {0,1,4,6,7,10};
+        System.out.println(Question_2367.Solution.arithmeticTriplets(nums, 3));
     }
     public static void Q2364()
     {
