@@ -20,7 +20,19 @@ public class Test
 {
     public static void main(String[] args)
     {
-      Q2367();
+      
+    }
+    public static void Q204()
+    {
+        int number = 499979;
+        
+        System.out.println(Question_204.Solution.countPrimes(number));
+    }
+    public static void Q29()
+    {
+        int divident = -2147483648;
+        int divisor = -1;
+        System.out.println(Question_29.Solution.divide(divident, divisor));
     }
     public static void Q2367()
     {
@@ -49,10 +61,6 @@ public class Test
     public static void Q69()
     {
         System.out.println(Question_69.Solution.mySqrt(8));
-    }
-    public static void Q263()
-    {
-        System.out.println(Question_263.Solution.isUgly(-1000));
     }
     public static void Q268()
     {

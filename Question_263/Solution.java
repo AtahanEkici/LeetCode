@@ -1,38 +1,30 @@
 package Question_263;
-
+// SOLVED //
 public class Solution 
 {
     public static boolean isUgly(int n) 
     {
-        if(n < 0)
+        if(n == 1){return true;}
+        else if(n == 0){return false;}
+        
+        int stored_value = n;
+        
+        while( stored_value % 2 == 0)
         {
-            n = n * -1;
+            stored_value = (stored_value / 2);
         }
         
-        while(n % 2 == 0)
+        while(stored_value % 3 == 0)
         {
-            n = n / 2;
+            stored_value = (stored_value / 3);
         }
         
-        while(n % 3 == 0)
+        while(stored_value % 5 == 0)
         {
-            n = n / 3;
+            stored_value = (stored_value / 5);
         }
         
-        while(n % 5 == 0)
-        {
-            n = n / 5;
-        }
-        
-        System.out.println(n);
-
-        if(n == 1)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return stored_value == 1;
     }
 }
+
