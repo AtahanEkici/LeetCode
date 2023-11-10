@@ -15,12 +15,41 @@ import static Question_8.Solution2.myAtoi;
 import static Question_66.Solution.plusOne;
 import static Question_66.Solution.printArray;
 import static Question_75.Solution.sortColors;
+import java.util.Arrays;
 
 public class Test 
 {
     public static void main(String[] args)
     {
-      
+        Q137();
+    }
+    public static void Q137()
+    {
+        int[] numbers = {0,1,0,1,0,1,99};
+        System.out.println("Array: "+ Arrays.toString(numbers));
+        System.out.println("Number is : "+Question_137.Solution.singleNumber(numbers));
+    }
+    public static void Q203()
+    {
+        ListNode ln = new ListNode(7);
+        ListNode temp1 = ln;
+        temp1.next = new ListNode(7);
+        temp1 = temp1.next;
+        temp1.next = new ListNode(7);
+        temp1 = temp1.next;
+        temp1.next = new ListNode(7);
+
+        TraverseNode(ln);
+        
+        Question_203.Solution.removeElements(ln, 7);
+        
+        TraverseNode(ln);
+    }
+    public static void Q202()
+    {
+        int number = 202;
+        
+        System.out.println(Question_202.Solution.isHappy(number));
     }
     public static void Q204()
     {
