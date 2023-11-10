@@ -21,7 +21,13 @@ public class Test
 {
     public static void main(String[] args)
     {
-        Q137();
+        Q260();
+    }
+     public static void Q260()
+    {
+        int[] numbers = {1,2,1,3,2,5};
+        System.out.println("Array: "+ Arrays.toString(numbers));
+        System.out.println("Numbers are : "+Arrays.toString(Question_260.Solution.singleNumber(numbers)));
     }
     public static void Q137()
     {
